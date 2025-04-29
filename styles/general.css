@@ -1,0 +1,12 @@
+p{
+    color: hotpink;
+}
+body{
+    font-family: "Playwrite IT Moderna";
+    font-size: 9px;
+    font-weight: 500; 
+    padding-left: 150px;
+    padding-right: 150px;
+    margin: 0;
+    background-color: rgb(255, 234, 238);
+}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="buttons.css">
+    </head>
+    <body>
+        <button class="sub" onclick="
+            if (!(document.querySelector('.join').innerHTML)){
+                document.querySelector('.join').innerHTML=0
+            }
+            document.querySelector('.join').innerHTML=JSON.parse(document.querySelector('.join').innerHTML)+1">SUBSCRIBE</button>
+        <button class="join"></button>
+        <button class="tweet">Tweet</button>
+    </body>
+</html>
+

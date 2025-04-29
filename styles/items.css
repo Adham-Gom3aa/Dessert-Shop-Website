@@ -1,0 +1,242 @@
+.pastries{
+    width: 180px;
+}
+.item-name{
+    margin-top: 5px;
+    color: rgb(23, 23, 23);
+    text-align: center;
+}
+.price{
+    margin-top: 12px;
+    font-size: 9px;
+    text-align: center;
+}
+.item{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: scale 0.25s;
+}
+.item:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+.item-buttons{
+    position: relative;
+    height: 30px;
+    width: 30px;
+    border-radius: 15px;
+    border-width: 1px;
+    border-style:solid;
+    background:rgb(255, 245, 247);
+    border-color: hotpink; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    margin-left:3px;
+    margin-right:3px; 
+    cursor: pointer;
+    transition: width 0.3s ease-in-out;
+}
+.item-count{
+    padding-bottom: 1px;
+    background-color: rgb(181, 20, 87);
+    position: absolute;
+    color: rgb(254, 232, 237);
+    border-radius: 10px;
+    font-size: 9px;
+    width: 16px;
+    text-align: center;
+    font-family:  "Playwrite IT Moderna";
+    scale: 0.8;
+    left:-5px;
+    top:-5px;
+    transition: opacity 0.3s;
+}
+.item-buttons:hover .item-count{
+    opacity: 0;
+}
+.item-buttons:hover{
+    width: 95px;
+}
+.item-buttons:hover .cart-size{
+    display: flex;
+    animation: apear 0.5s;
+}
+.item-buttons:hover .cart-pic{
+    position: absolute;
+    transform: translateX(-36px);
+}
+.cart-button{
+    cursor:default;
+}
+.button-group{
+    margin-top: 6px;
+    display: flex;
+    justify-content:center;
+}
+.item-grid{ 
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: rgb(255, 245, 247);
+    min-width: 200px;
+}
+.cart-size{
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    display: none;
+    animation: vanish 0.3s;
+}
+.cart-pic{
+    position: absolute;
+    transition: transform 0.3s ease-in-out;
+}
+@keyframes apear {
+    from{
+        opacity: 0;
+        scale: 0;
+        display: none;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+        display: flex;
+    }   
+}
+@keyframes vanish {
+    from{
+        opacity: 1;
+        scale: 1;
+        display: flex;
+    }
+    to{
+        opacity: 0;
+        scale: 0;
+        display: none;
+    }
+    
+}
+.add-to-cart{
+    padding: 5px 13px;
+    background-color: rgb(181, 20, 87);
+    color: rgb(254, 232, 237);
+    border: none;
+    border-radius: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    font-family:  "Playwrite IT Moderna";
+    scale: 0.5;
+    cursor: pointer;
+}
+.number-of-items{
+    text-align: center;
+    justify-content: center;
+    width: 10px;
+}
+.item-detail{
+    position: fixed;
+    top: 0;
+    background-color: rgb(0, 0, 0,0.4);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 102;
+}
+.popup-content{
+    width: 95vw;
+    height: 365px;
+    max-width: 750px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    z-index: 103;
+    background-color: aqua;
+    border: 2px solid red;
+}
+.popup-grid{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid red;
+    margin: 30px;
+}
+.popup-content .pastries{
+    width: 250px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    background-color: blue;
+    border: 2px solid red;
+}
+.popup-content .js-like-button{
+    background-color: white;
+}
+.popup-content .js-like-button:hover{
+    width: 30px;
+}
+.details{
+    margin-top: 10px;
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    background-color: blueviolet;
+    align-self: self-start;
+}
+.details .name{
+    font-size: 18px;
+}
+.details .price{
+    padding-left: 2px;
+    font-size: 8px;
+    margin-top: 7px;
+    font-weight: bold;
+}
+.popup-content .js-like-button{
+    top: 10px;
+    right: 0px;
+}
+@media (max-width: 848px) {
+    .popup-content {
+        max-width: 648px;
+    }
+}
+@media (max-width: 648px) {
+    .popup-content {
+        max-width: 548px;
+    }
+}
+@media (max-width: 548px) {
+    .popup-content {
+        height: 500px;
+        width: 94vw;
+        flex-direction: column;
+        align-items: start;
+    }  
+}
+
+.popup-content .js-like-button{
+    position: absolute;
+    scale: 0.7;
+}
+.close-popup{
+    display: flex;
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 15px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    cursor: pointer;
+    z-index: 1;
+}

@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/items.css" />
+    <link rel="stylesheet" href="styles/general.css" />
+    <link rel="stylesheet" href="styles/header.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playwrite+IT+Moderna:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Gourment Shop</title>
+  </head>
+  <body>
+    <div class="sidebar"></div>
+    <div class="header">
+      <div class="header-grid">
+        <div class="left-section">
+          <svg
+            width="24"
+            height="24"
+            xmlns="http://www.w3.org/2000/svg"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            fill="hotpink"
+            class="location"
+          >
+            <path
+              d="M12 10c-1.104 0-2-.896-2-2s.896-2 2-2 2 .896 2 2-.896 2-2 2m0-5c-1.657 0-3 1.343-3 3s1.343 3 3 3 3-1.343 3-3-1.343-3-3-3m-7 2.602c0-3.517 3.271-6.602 7-6.602s7 3.085 7 6.602c0 3.455-2.563 7.543-7 14.527-4.489-7.073-7-11.072-7-14.527m7-7.602c-4.198 0-8 3.403-8 7.602 0 4.198 3.469 9.21 8 16.398 4.531-7.188 8-12.2 8-16.398 0-4.199-3.801-7.602-8-7.602"
+            />
+          </svg>
+          <div class="place-menu">
+            <p class="place"><u>Smouha</u></p>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="hotpink"
+              class="place-arrow"
+            >
+              <path
+                d="M0 7.33l2.829-2.83 9.175 9.339 9.167-9.339 2.829 2.83-11.996 12.17z"
+              />
+            </svg>
+          </div>
+          <p class="language">ENG</p>
+        </div>
+        <div class="middle-section">
+          <img
+            class="logo"
+            src="pics/Screenshot_2025-02-22_115144-removebg-preview.png"
+          />
+        </div>
+        <div class="right-section">
+          <div class="right-grid">
+            <div class="like-count ">0</div>
+            <div class="cart-count ">0</div>
+            <svg
+              clip-rule="evenodd"
+              fill-rule="evenodd"
+              stroke-linejoin="round"
+              stroke-miterlimit="2"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+              class="search"
+              fill="hotpink"
+            >
+              <path
+                d="m15.97 17.031c-1.479 1.238-3.384 1.985-5.461 1.985-4.697 0-8.509-3.812-8.509-8.508s3.812-8.508 8.509-8.508c4.695 0 8.508 3.812 8.508 8.508 0 2.078-.747 3.984-1.985 5.461l4.749 4.75c.146.146.219.338.219.531 0 .587-.537.75-.75.75-.192 0-.384-.073-.531-.22zm-5.461-13.53c-3.868 0-7.007 3.14-7.007 7.007s3.139 7.007 7.007 7.007c3.866 0 7.007-3.14 7.007-7.007s-3.141-7.007-7.007-7.007z"
+                fill-rule="nonzero"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 512 512"
+              width="14"
+              height="14"
+              font-weight="900"
+              fill="hotpink"
+              class="liked"
+            >
+              <path
+                d="M458.4 64.3C400.6 15.7 311.3 23 256 79.3 200.7 23 111.4 15.6 53.6 64.3-21.6 127.6-10.6 230.8 43 285.5l175.4 178.7c10 10.2 23.4 15.9 37.6 15.9 14.3 0 27.6-5.6 37.6-15.8L469
+                                285.6c53.5-54.7 64.7-157.9-10.6-221.3m-23.6 187.5L259.4 430.5c-2.4 2.4-4.4 2.4-6.8 0L77.2 251.8c-36.5-37.2-43.9-107.6 7.3-150.7 38.9-32.7 98.9-27.8 136.5
+                                10.5l35 35.7 35-35.7c37.8-38.5 97.8-43.2 136.5-10.6 51.1 43.1 43.5 113.9 7.3 150.8"
+              ></path>
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="profile"
+              fill="hotpink"
+            >
+              <path
+                d="M12 2c2.757 0 5 2.243 5 5.001 0 2.756-2.243 5-5 5s-5-2.244-5-5c0-2.758 2.243-5.001 5-5.001zm0-2c-3.866 0-7 3.134-7 7.001 0 3.865 3.134 7 7 7s7-3.135 7-7c0-3.867-3.134-7.001-7-7.001zm6.369 13.353c-.497.498-1.057.931-1.658 1.302 2.872 1.874 4.378 5.083 4.972 7.346h-19.387c.572-2.29 2.058-5.503 4.973-7.358-.603-.374-1.162-.811-1.658-1.312-4.258 3.072-5.611 8.506-5.611 10.669h24c0-2.142-1.44-7.557-5.631-10.647z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="cart"
+              fill="hotpink"
+            >
+              <path
+                d="M4.558 7l4.701-4.702c.199-.198.46-.298.721-.298.613 0 1.02.505 1.02 1.029 0 .25-.092.504-.299.711l-3.26 3.26h-2.883zm12.001 0h2.883l-4.701-4.702c-.199-.198-.46-.298-.721-.298-.613 0-1.02.505-1.02 1.029 0 .25.092.504.299.711l3.26 3.26zm-16.559 2v2h.643c.534 0 1.021.304 1.256.784l4.101 10.216h12l4.102-10.214c.233-.481.722-.786 1.256-.786h.642v-2h-24z"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="mini-menu">
+        <div class="mini-grid">
+          <p class="ramadan">Ramadan</p>
+          <p class="menu">Menu</p>
+          <p class="special">Special Orders</p>
+        </div>
+      </div>
+    </div>
+    <div class="item-grid">
+      <div class="item">
+        <div>
+          <img
+            class="pastries"
+            src="pics/14a89f00-19e6-4ef4-9e15-39f60f3dc858-638344332227539697.png"
+          />
+        </div>
+        <div>
+          <p class="item-name">Nutella Tart</p>
+          <p class="price">85 EGP</p>
+        </div>
+        <div class="button-group">
+          <div class="item-buttons eye-button" >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="14"
+              height="14"
+              font-weight="900"
+              fill="hotpink"
+            >
+              <path
+                d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 
+                                    448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19M288 400a144 144 0 1 1 144-144
+                                    143.93 143.93 0 0 1-144 144m0-240a95.3 95.3 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160"
+              ></path>
+            </svg>
+          </div>
+          <div class="item-buttons js-like-button">
+            <svg clip-rule="evenodd" fill-rule="evenodd" fill="hotpink" height="17" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m7.234 3.004c-2.652 0-5.234 1.829-5.234 5.177 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-3.353-2.58-5.168-5.229-5.168-1.836 0-3.646.866-4.771 2.554-1.13-1.696-2.935-2.563-4.766-2.563zm0 1.5c1.99.001 3.202 1.353 4.155 2.7.14.198.368.316.611.317.243 0 .471-.117.612-.314.955-1.339 2.19-2.694 4.159-2.694 1.796 0 3.729 1.148 3.729 3.668 0 2.671-2.881 5.673-8.5 11.127-5.454-5.285-8.5-8.389-8.5-11.127 0-1.125.389-2.069 1.124-2.727.673-.604 1.625-.95 2.61-.95z" fill-rule="nonzero"/></svg>
+          </div>
+          <div class="item-buttons cart-button">
+            <svg
+              class="cart-pic"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="14"
+              height="14"
+              fill="hotpink"
+            >
+              <path
+                d="m528.12 301.319 47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 
+                                    24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 
+                                    30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681"
+              ></path>
+            </svg>
+              <div class="cart-size">
+                <button class="add-to-cart minus-cart">-</button>
+                <p class="number-of-items">0</p>
+                <button class="add-to-cart plus-cart">+</button>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div>
+          <img
+            class="pastries"
+            src="pics/2a324662-d351-4fcf-991c-704c9d10803f-638265804177792919.png"
+          />
+        </div>
+        <div>
+          <p class="item-name">Chocolate &#201;clair</p>
+          <p class="price">50 EGP</p>
+        </div>
+        <div class="button-group">
+          <div class="item-buttons eye-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="14"
+              height="14"
+              font-weight="900"
+              fill="hotpink"
+            >
+              <path
+                d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 
+                                    448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19M288 400a144 144 0 1 1 144-144
+                                    143.93 143.93 0 0 1-144 144m0-240a95.3 95.3 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160"
+              ></path>
+            </svg>
+          </div>
+          <div class="item-buttons js-like-button">
+            <svg clip-rule="evenodd" fill-rule="evenodd" fill="hotpink" height="17" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m7.234 3.004c-2.652 0-5.234 1.829-5.234 5.177 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-3.353-2.58-5.168-5.229-5.168-1.836 0-3.646.866-4.771 2.554-1.13-1.696-2.935-2.563-4.766-2.563zm0 1.5c1.99.001 3.202 1.353 4.155 2.7.14.198.368.316.611.317.243 0 .471-.117.612-.314.955-1.339 2.19-2.694 4.159-2.694 1.796 0 3.729 1.148 3.729 3.668 0 2.671-2.881 5.673-8.5 11.127-5.454-5.285-8.5-8.389-8.5-11.127 0-1.125.389-2.069 1.124-2.727.673-.604 1.625-.95 2.61-.95z" fill-rule="nonzero"/></svg>
+          </div>
+          <div class="item-buttons cart-button">
+            <svg
+              class="cart-pic"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="14"
+              height="14"
+              fill="hotpink"
+            >
+              <path
+                d="m528.12 301.319 47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 
+                                    24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 
+                                    30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681"
+              ></path>
+            </svg>
+              <div class="cart-size">
+                <button class="add-to-cart minus-cart">-</button>
+                <p class="number-of-items">0</p>
+                <button class="add-to-cart plus-cart">+</button>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div>
+          <img
+            class="pastries"
+            src="pics/503637ca-310d-46b6-9942-cb6aa9875b7f-638265805444833442.png"
+          />
+        </div>
+        <div>
+          <p class="item-name">Jam Mille Feuille</p>
+          <p class="price">60 EGP</p>
+        </div>
+        <div class="button-group">
+          <div class="item-buttons eye-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="14"
+              height="14"
+              font-weight="900"
+              fill="hotpink"
+            >
+              <path
+                d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 
+                                    448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19M288 400a144 144 0 1 1 144-144
+                                    143.93 143.93 0 0 1-144 144m0-240a95.3 95.3 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160"
+              ></path>
+            </svg>
+          </div>
+          <div class="item-buttons js-like-button">
+            <svg clip-rule="evenodd" fill-rule="evenodd" fill="hotpink" height="17" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m7.234 3.004c-2.652 0-5.234 1.829-5.234 5.177 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-3.353-2.58-5.168-5.229-5.168-1.836 0-3.646.866-4.771 2.554-1.13-1.696-2.935-2.563-4.766-2.563zm0 1.5c1.99.001 3.202 1.353 4.155 2.7.14.198.368.316.611.317.243 0 .471-.117.612-.314.955-1.339 2.19-2.694 4.159-2.694 1.796 0 3.729 1.148 3.729 3.668 0 2.671-2.881 5.673-8.5 11.127-5.454-5.285-8.5-8.389-8.5-11.127 0-1.125.389-2.069 1.124-2.727.673-.604 1.625-.95 2.61-.95z" fill-rule="nonzero"/></svg>
+          </div>
+          <div class="item-buttons cart-button">
+            <svg
+              class="cart-pic"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="14"
+              height="14"
+              fill="hotpink"
+            >
+              <path
+                d="m528.12 301.319 47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 
+                                    24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 
+                                    30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681"
+              ></path>
+            </svg>
+              <div class="cart-size">
+                <button class="add-to-cart minus-cart">-</button>
+                <p class="number-of-items">0</p>
+                <button class="add-to-cart plus-cart">+</button>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div>
+          <img
+            class="pastries"
+            src="pics/36e38a55-f9b3-4366-b0c4-2a17a2e9e630-638567380333740580.png"
+          />
+        </div>
+        <div>
+          <p class="item-name">Raspberry Gateau</p>
+          <p class="price">70 EGP</p>
+        </div>
+        <div class="button-group">
+          <div class="item-buttons eye-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="14"
+              height="14"
+              font-weight="900"
+              fill="hotpink"
+            >
+              <path
+                d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 
+                                    448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19M288 400a144 144 0 1 1 144-144
+                                    143.93 143.93 0 0 1-144 144m0-240a95.3 95.3 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160"
+              ></path>
+            </svg>
+          </div>
+          <div class="item-buttons js-like-button">
+            <svg clip-rule="evenodd" fill-rule="evenodd" fill="hotpink" height="17" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m7.234 3.004c-2.652 0-5.234 1.829-5.234 5.177 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-3.353-2.58-5.168-5.229-5.168-1.836 0-3.646.866-4.771 2.554-1.13-1.696-2.935-2.563-4.766-2.563zm0 1.5c1.99.001 3.202 1.353 4.155 2.7.14.198.368.316.611.317.243 0 .471-.117.612-.314.955-1.339 2.19-2.694 4.159-2.694 1.796 0 3.729 1.148 3.729 3.668 0 2.671-2.881 5.673-8.5 11.127-5.454-5.285-8.5-8.389-8.5-11.127 0-1.125.389-2.069 1.124-2.727.673-.604 1.625-.95 2.61-.95z" fill-rule="nonzero"/></svg>
+          </div>
+          <div class="item-buttons cart-button">
+            <svg
+              class="cart-pic"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="14"
+              height="14"
+              fill="hotpink"
+            >
+              <path
+                d="m528.12 301.319 47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 
+                                    24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 
+                                    30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681"
+              ></path>
+            </svg>
+              <div class="cart-size">
+                <button class="add-to-cart minus-cart">-</button>
+                <p class="number-of-items">0</p>
+                <button class="add-to-cart plus-cart">+</button>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div>
+          <img
+            class="pastries"
+            src="pics/9eed62ac-acf7-4f40-b97e-5e2960d27131-638265806335617677.png"
+          />
+        </div>
+        <div>
+          <p class="item-name">Gourment Deluxe Gateaux</p>
+          <p class="price">55 EGP</p>
+        </div>
+        <div class="button-group">
+          <div class="item-buttons eye-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="14"
+              height="14"
+              font-weight="900"
+              fill="hotpink"
+            >
+              <path
+                d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 
+                                    448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19M288 400a144 144 0 1 1 144-144
+                                    143.93 143.93 0 0 1-144 144m0-240a95.3 95.3 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160"
+              ></path>
+            </svg>
+          </div>
+          <div class="item-buttons js-like-button">
+            <svg clip-rule="evenodd" fill-rule="evenodd" fill="hotpink" height="17" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m7.234 3.004c-2.652 0-5.234 1.829-5.234 5.177 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-3.353-2.58-5.168-5.229-5.168-1.836 0-3.646.866-4.771 2.554-1.13-1.696-2.935-2.563-4.766-2.563zm0 1.5c1.99.001 3.202 1.353 4.155 2.7.14.198.368.316.611.317.243 0 .471-.117.612-.314.955-1.339 2.19-2.694 4.159-2.694 1.796 0 3.729 1.148 3.729 3.668 0 2.671-2.881 5.673-8.5 11.127-5.454-5.285-8.5-8.389-8.5-11.127 0-1.125.389-2.069 1.124-2.727.673-.604 1.625-.95 2.61-.95z" fill-rule="nonzero"/></svg>
+          </div>
+          <div class="item-buttons cart-button">
+            <svg
+              class="cart-pic"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="14"
+              height="14"
+              fill="hotpink"
+            >
+              <path
+                d="m528.12 301.319 47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 
+                                    24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 
+                                    30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681"
+              ></path>
+            </svg>
+              <div class="cart-size">
+                <button class="add-to-cart minus-cart">-</button>
+                <p class="number-of-items">0</p>
+                <button class="add-to-cart plus-cart">+</button>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div>
+          <img
+            class="pastries"
+            src="pics/65e91b3d-ee1e-46d2-bcd6-2826f3c36971-638265805820459670.png"
+          />
+        </div>
+        <div>
+          <p class="item-name">Chocolate Mille Feuille</p>
+          <p class="price">60 EGP</p>
+        </div>
+        <div class="button-group">
+          <div class="item-buttons eye-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="14"
+              height="14"
+              font-weight="900"
+              fill="hotpink"
+            >
+              <path
+                d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 
+                                    448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19M288 400a144 144 0 1 1 144-144
+                                    143.93 143.93 0 0 1-144 144m0-240a95.3 95.3 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160"
+              ></path>
+            </svg>
+          </div>
+          <div class="item-buttons js-like-button">
+            <svg clip-rule="evenodd" fill-rule="evenodd" fill="hotpink" height="17" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m7.234 3.004c-2.652 0-5.234 1.829-5.234 5.177 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-3.353-2.58-5.168-5.229-5.168-1.836 0-3.646.866-4.771 2.554-1.13-1.696-2.935-2.563-4.766-2.563zm0 1.5c1.99.001 3.202 1.353 4.155 2.7.14.198.368.316.611.317.243 0 .471-.117.612-.314.955-1.339 2.19-2.694 4.159-2.694 1.796 0 3.729 1.148 3.729 3.668 0 2.671-2.881 5.673-8.5 11.127-5.454-5.285-8.5-8.389-8.5-11.127 0-1.125.389-2.069 1.124-2.727.673-.604 1.625-.95 2.61-.95z" fill-rule="nonzero"/></svg>
+          </div>
+          <div class="item-buttons cart-button">
+            <svg
+              class="cart-pic"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="14"
+              height="14"
+              fill="hotpink"
+            >
+              <path
+                d="m528.12 301.319 47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 
+                                    24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 
+                                    30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681"
+              ></path>
+            </svg>
+              <div class="cart-size">
+                <button class="add-to-cart minus-cart">-</button>
+                <p class="number-of-items">0</p>
+                <button class="add-to-cart plus-cart">+</button>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div>
+          <img
+            class="pastries"
+            src="pics/6b4bc6d2-af08-4df0-80d8-a00ebbebe2ee-638265793409593679.png"
+          />
+        </div>
+        <div>
+          <p class="item-name">Walnut Tart</p>
+          <p class="price">65 EGP</p>
+        </div>
+        <div class="button-group">
+          <div class="item-buttons eye-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="14"
+              height="14"
+              font-weight="900"
+              fill="hotpink"
+            >
+              <path
+                d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 
+                                    448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19M288 400a144 144 0 1 1 144-144
+                                    143.93 143.93 0 0 1-144 144m0-240a95.3 95.3 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160"
+              ></path>
+            </svg>
+          </div>
+          <div class="item-buttons js-like-button">
+            <svg clip-rule="evenodd" fill-rule="evenodd" fill="hotpink" height="17" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m7.234 3.004c-2.652 0-5.234 1.829-5.234 5.177 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-3.353-2.58-5.168-5.229-5.168-1.836 0-3.646.866-4.771 2.554-1.13-1.696-2.935-2.563-4.766-2.563zm0 1.5c1.99.001 3.202 1.353 4.155 2.7.14.198.368.316.611.317.243 0 .471-.117.612-.314.955-1.339 2.19-2.694 4.159-2.694 1.796 0 3.729 1.148 3.729 3.668 0 2.671-2.881 5.673-8.5 11.127-5.454-5.285-8.5-8.389-8.5-11.127 0-1.125.389-2.069 1.124-2.727.673-.604 1.625-.95 2.61-.95z" fill-rule="nonzero"/></svg>
+          </div>
+          <div class="item-buttons cart-button">
+            <svg
+              class="cart-pic"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="14"
+              height="14"
+              fill="hotpink"
+            >
+              <path
+                d="m528.12 301.319 47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 
+                                    24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 
+                                    30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681"
+              ></path>
+            </svg>
+              <div class="cart-size">
+                <button class="add-to-cart minus-cart">-</button>
+                <p class="number-of-items">0</p>
+                <button class="add-to-cart plus-cart">+</button>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div>
+          <img
+            class="pastries"
+            src="pics/72ebbdd7-265a-4e72-aad0-2d4ebcede99b-638265802102252890.png"
+          />
+        </div>
+        <div>
+          <p class="item-name">Cigarette Gateau</p>
+          <p class="price">55 EGP</p>
+        </div>
+        <div class="button-group">
+          <div class="item-buttons eye-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="14"
+              height="14"
+              font-weight="900"
+              fill="hotpink"
+            >
+              <path
+                d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 
+                                    448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19M288 400a144 144 0 1 1 144-144
+                                    143.93 143.93 0 0 1-144 144m0-240a95.3 95.3 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160"
+              ></path>
+            </svg>
+          </div>
+          <div class="item-buttons js-like-button">
+            <svg clip-rule="evenodd" fill-rule="evenodd" fill="hotpink" height="17" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m7.234 3.004c-2.652 0-5.234 1.829-5.234 5.177 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-3.353-2.58-5.168-5.229-5.168-1.836 0-3.646.866-4.771 2.554-1.13-1.696-2.935-2.563-4.766-2.563zm0 1.5c1.99.001 3.202 1.353 4.155 2.7.14.198.368.316.611.317.243 0 .471-.117.612-.314.955-1.339 2.19-2.694 4.159-2.694 1.796 0 3.729 1.148 3.729 3.668 0 2.671-2.881 5.673-8.5 11.127-5.454-5.285-8.5-8.389-8.5-11.127 0-1.125.389-2.069 1.124-2.727.673-.604 1.625-.95 2.61-.95z" fill-rule="nonzero"/></svg>
+          </div>
+          <div class="item-buttons cart-button">
+            <svg
+              class="cart-pic"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="14"
+              height="14"
+              fill="hotpink"
+            >
+              <path
+                d="m528.12 301.319 47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 
+                                    24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 
+                                    30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681"
+              ></path>
+            </svg>
+              <div class="cart-size">
+                <button class="add-to-cart minus-cart">-</button>
+                <p class="number-of-items">0</p>
+                <button class="add-to-cart plus-cart">+</button>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div>
+          <img
+            class="pastries"
+            src="pics/767f3533-173f-4625-bc0a-ae755b894a66-638265801451404399.png"
+          />
+        </div>
+        <div>
+          <p class="item-name">Welly Gateau</p>
+          <p class="price">60 EGP</p>
+        </div>
+        <div class="button-group">
+          <div class="item-buttons eye-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="14"
+              height="14"
+              font-weight="900"
+              fill="hotpink"
+            >
+              <path
+                d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 
+                                    448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19M288 400a144 144 0 1 1 144-144
+                                    143.93 143.93 0 0 1-144 144m0-240a95.3 95.3 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160"
+              ></path>
+            </svg>
+          </div>
+          <div class="item-buttons js-like-button">
+            <svg clip-rule="evenodd" fill-rule="evenodd" fill="hotpink" height="17" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m7.234 3.004c-2.652 0-5.234 1.829-5.234 5.177 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-3.353-2.58-5.168-5.229-5.168-1.836 0-3.646.866-4.771 2.554-1.13-1.696-2.935-2.563-4.766-2.563zm0 1.5c1.99.001 3.202 1.353 4.155 2.7.14.198.368.316.611.317.243 0 .471-.117.612-.314.955-1.339 2.19-2.694 4.159-2.694 1.796 0 3.729 1.148 3.729 3.668 0 2.671-2.881 5.673-8.5 11.127-5.454-5.285-8.5-8.389-8.5-11.127 0-1.125.389-2.069 1.124-2.727.673-.604 1.625-.95 2.61-.95z" fill-rule="nonzero"/></svg>
+          </div>
+          <div class="item-buttons cart-button">
+            <svg
+              class="cart-pic"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="14"
+              height="14"
+              fill="hotpink"
+            >
+              <path
+                d="m528.12 301.319 47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 
+                                    24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 
+                                    30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681"
+              ></path>
+            </svg>
+              <div class="cart-size">
+                <button class="add-to-cart minus-cart">-</button>
+                <p class="number-of-items">0</p>
+                <button class="add-to-cart plus-cart">+</button>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div>
+          <img
+            class="pastries"
+            src="pics/d9dffd52-9f7f-466e-813e-eadc7dccb999-638265807129527830.png"
+          />
+        </div>
+        <div>
+          <p class="item-name">Tutti Frutti Gateau</p>
+          <p class="price">65 EGP</p>
+        </div>
+        <div class="button-group">
+          <div class="item-buttons eye-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="14"
+              height="14"
+              font-weight="900"
+              fill="hotpink"
+            >
+              <path
+                d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 
+                                    448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19M288 400a144 144 0 1 1 144-144
+                                    143.93 143.93 0 0 1-144 144m0-240a95.3 95.3 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160"
+              ></path>
+            </svg>
+          </div>
+          <div class="item-buttons js-like-button">
+            <svg clip-rule="evenodd" fill-rule="evenodd" fill="hotpink" height="17" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m7.234 3.004c-2.652 0-5.234 1.829-5.234 5.177 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-3.353-2.58-5.168-5.229-5.168-1.836 0-3.646.866-4.771 2.554-1.13-1.696-2.935-2.563-4.766-2.563zm0 1.5c1.99.001 3.202 1.353 4.155 2.7.14.198.368.316.611.317.243 0 .471-.117.612-.314.955-1.339 2.19-2.694 4.159-2.694 1.796 0 3.729 1.148 3.729 3.668 0 2.671-2.881 5.673-8.5 11.127-5.454-5.285-8.5-8.389-8.5-11.127 0-1.125.389-2.069 1.124-2.727.673-.604 1.625-.95 2.61-.95z" fill-rule="nonzero"/></svg>
+          </div>
+          <div class="item-buttons cart-button">
+            <svg
+              class="cart-pic"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="14"
+              height="14"
+              fill="hotpink"
+            >
+              <path
+                d="m528.12 301.319 47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 
+                                    24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 
+                                    30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681"
+              ></path>
+            </svg>
+              <div class="cart-size">
+                <button class="add-to-cart minus-cart">-</button>
+                <p class="number-of-items">0</p>
+                <button class="add-to-cart plus-cart">+</button>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="item">
+        <div>
+          <img
+            class="pastries"
+            src="pics/becc1a6b-0c6f-4e58-9993-ad81b850eb7e-638265793961314179.png"
+          />
+        </div>
+        <div>
+          <p class="item-name">Lotus Swiss Roll Gateau</p>
+          <p class="price">85 EGP</p>
+        </div>
+        <div class="button-group">
+          <div class="item-buttons eye-button">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="14"
+              height="14"
+              font-weight="900"
+              fill="hotpink"
+            >
+              <path
+                d="M572.52 241.4C518.29 135.59 410.93 64 288 64S57.68 135.64 3.48 241.41a32.35 32.35 0 0 0 0 29.19C57.71 376.41 165.07 448 288 
+                                    448s230.32-71.64 284.52-177.41a32.35 32.35 0 0 0 0-29.19M288 400a144 144 0 1 1 144-144
+                                    143.93 143.93 0 0 1-144 144m0-240a95.3 95.3 0 0 0-25.31 3.79 47.85 47.85 0 0 1-66.9 66.9A95.78 95.78 0 1 0 288 160"
+              ></path>
+            </svg>
+          </div>
+          <div class="item-buttons js-like-button">
+            <svg clip-rule="evenodd" fill-rule="evenodd" fill="hotpink" height="17" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m7.234 3.004c-2.652 0-5.234 1.829-5.234 5.177 0 3.725 4.345 7.727 9.303 12.54.194.189.446.283.697.283s.503-.094.697-.283c4.977-4.831 9.303-8.814 9.303-12.54 0-3.353-2.58-5.168-5.229-5.168-1.836 0-3.646.866-4.771 2.554-1.13-1.696-2.935-2.563-4.766-2.563zm0 1.5c1.99.001 3.202 1.353 4.155 2.7.14.198.368.316.611.317.243 0 .471-.117.612-.314.955-1.339 2.19-2.694 4.159-2.694 1.796 0 3.729 1.148 3.729 3.668 0 2.671-2.881 5.673-8.5 11.127-5.454-5.285-8.5-8.389-8.5-11.127 0-1.125.389-2.069 1.124-2.727.673-.604 1.625-.95 2.61-.95z" fill-rule="nonzero"/></svg>
+          </div>
+          <div class="item-buttons cart-button">
+            <svg
+              class="cart-pic"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 576 512"
+              width="14"
+              height="14"
+              fill="hotpink"
+            >
+              <path
+                d="m528.12 301.319 47.273-208C578.806 78.301 567.391 64 551.99 64H159.208l-9.166-44.81C147.758 8.021 137.93 0 126.529 0H24C10.745 0 0 10.745 0 24v16c0 13.255 10.745 24 24 
+                                    24h69.883l70.248 343.435C147.325 417.1 136 435.222 136 456c0 30.928 25.072 56 56 56s56-25.072 56-56c0-15.674-6.447-29.835-16.824-40h209.647C430.447 426.165 424 440.326 424 456c0 
+                                    30.928 25.072 56 56 56s56-25.072 56-56c0-22.172-12.888-41.332-31.579-50.405l5.517-24.276c3.413-15.018-8.002-29.319-23.403-29.319H218.117l-6.545-32h293.145c11.206 0 20.92-7.754 23.403-18.681"
+              ></path>
+            </svg>
+              <div class="cart-size">
+                <button class="add-to-cart minus-cart">-</button>
+                <p class="number-of-items">0</p>
+                <button class="add-to-cart plus-cart">+</button>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="shop.js">
+    </script>
+  </body>
+</html>
